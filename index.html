@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socialbook</title>
+    <!-- font awsome cdn link  -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="./images/logo.png" alt="" class="logo" srcset="" />
+        <ul>
+          <li><img src="./images/notification.png" alt="" /></li>
+          <li><img src="./images/inbox.png" alt="" /></li>
+          <li><img src="./images/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="./images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="SettingMenueToggle()">
+          <img src="./images/profile-pic.png" alt="" srcset="" />
+        </div>
+      </div>
+
+      <!-- setting menu -->
+      <div class="setting-menu">
+        <div id="dark-btn" >
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./images/profile-pic.png" alt="" srcset="" />
+            <div>
+              <p>John Nicho</p>
+             <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="./images/feedback.png" alt="" srcset="" />
+            <div>
+              <p>Give Feedback</p>
+             <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+          <div class="settings-links">
+            <img src="./images/setting.png" alt="" class="setting-icon">
+            <a href="#">Setting & Privacy</a>
+            <img src="./images/arrow.png" width="10px" alt="" srcset="">
+          </div>
+
+          <div class="settings-links">
+            <img src="./images/help.png" alt="" class="setting-icon">
+            <a href="#">Help & Support</a>
+            <img src="./images/arrow.png" width="10px" alt="" srcset="">
+          </div>
+
+          <div class="settings-links">
+            <img src="./images/display.png" alt="" class="setting-icon">
+            <a href="#">Display & Accessibility</a>
+            <img src="./images/arrow.png" width="10px" alt="" srcset="">
+          </div>
+
+          <div class="settings-links">
+            <img src="./images/logout.png" alt="" class="setting-icon">
+            <a href="#">Logout</a>
+            <img src="./images/arrow.png" width="10px" alt="" srcset="">
+          </div>
+        </div>
+        <!-- <div class="user-profile">
+          <img src="./images/profile-pic.png" alt="" srcset="" />
+          <div>
+            <p>John Nicho</p>
+           <a href="#">See your profile</a>
+          </div>
+        </div>
+        <div class="user-profile">
+          <img src="./images/feedback.png" alt="" srcset="" />
+          <div>
+            <p>Give Feedback</p>
+           <a href="#">Help us to improve the new design</a>
+          </div>
+        </div> -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- left-sidebar -->
+      <div class="left-sidebar">
+        <div class="img-links">
+          <a href="#"
+            ><img src="./images/news.png" alt="" srcset="" />Latest News</a
+          >
+          <a href="#"
+            ><img src="./images/friends.png" alt="" srcset="" />Friends</a
+          >
+          <a href="#"><img src="./images/group.png" alt="" srcset="" />Group</a>
+          <a href="#"
+            ><img
+              src="./images/marketplace.png"
+              alt=""
+              srcset=""
+            />Marketplace</a
+          >
+          <a href="#"><img src="./images/watch.png" alt="" srcset="" />Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shoctcuts</p>
+          <a href="#"
+            ><img src="./images/shortcut-1.png" alt="" srcset="" /> Web
+            Developers</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-2.png" alt="" srcset="" /> Web Design
+            course</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-3.png" alt="" srcset="" /> Full Stack
+            Developer</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-3.png" alt="" srcset="" /> Website
+            Expert</a
+          >
+        </div>
+      </div>
+      <!-- main-sidebar -->
+      <div class="main-sidebar">
+        <!-- start story-gallery -->
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="./images/upload.png" alt="" srcset="" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="./images/member-1.png" alt="" srcset="" />
+            <p>Alison</p>
+          </div>
+          <div class="story story3">
+            <img src="./images/member-2.png" alt="" srcset="" />
+            <p>Jackson</p>
+          </div>
+          <div class="story story4">
+            <img src="./images/member-3.png" alt="" srcset="" />
+            <p>Samon</p>
+          </div>
+          <div class="story story5">
+            <img src="./images/member-4.png" alt="" srcset="" />
+            <p>john Doe</p>
+          </div>
+        </div>
+        <!-- end story-gallery -->
+<!-- start write-post-container -->
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="./images/profile-pic.png" alt="" srcset="" />
+            <div>
+              <p>John Nicho</p>
+              <small>Public <i class="fas fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea name="" id="" placeholder="What's on your mind John?" rows="3"></textarea>
+
+            <div class="add-post-links">
+              <a href="#"><img src="./images/live-video.png" alt="" srcset="">Live video</a>
+              <a href="#"><img src="./images/photo.png" alt="" srcset="">Photo/Video</a>
+              <a href="#"><img src="./images/feeling.png" alt="" srcset="">Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+        <!-- end write-post-container -->
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" alt="" srcset="" />
+              <div>
+                <p>John Nicho</p>
+                <span>June 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <!-- <div class="user-profile">
+            <img src="./images/profile-pic.png" alt="" srcset="" />
+            <div>
+              <p>John Nicho</p>
+              <span>June 24 2021,13:40 pm</span>
+            </div>
+          </div> -->
+          <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on website developer and UI designs. <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a></p>
+          <img src="./images/feed-image-1.png" class="post-img" alt="" srcset="">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="">120</div>
+              <div><img src="./images/comments.png" alt="">45</div>
+              <div><img src="./images/share.png" alt="">20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="" srcset=""><i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" alt="" srcset="" />
+              <div>
+                <p>John Nicho</p>
+                <span>June 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on website developer and UI designs. <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a></p>
+          <img src="./images/feed-image-2.png" class="post-img" alt="" srcset="">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="">120</div>
+              <div><img src="./images/comments.png" alt="">45</div>
+              <div><img src="./images/share.png" alt="">20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="" srcset=""><i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" alt="" srcset="" />
+              <div>
+                <p>John Nicho</p>
+                <span>June 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">Subscribe <span>@Easy Tutorials</span>  No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.. <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a></p>
+          <img src="./images/feed-image-3.png" class="post-img" alt="" srcset="">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="">120</div>
+              <div><img src="./images/comments.png" alt="">45</div>
+              <div><img src="./images/share.png" alt="">20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="" srcset=""><i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" alt="" srcset="" />
+              <div>
+                <p>John Nicho</p>
+                <span>June 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on website developer and UI designs. <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a></p>
+          <img src="./images/feed-image-4.png" class="post-img" alt="" srcset="">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="">120</div>
+              <div><img src="./images/comments.png" alt="">45</div>
+              <div><img src="./images/share.png" alt="">20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="" srcset=""><i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" alt="" srcset="" />
+              <div>
+                <p>John Nicho</p>
+                <span>June 24 2021,13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on website developer and UI designs. <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a></p>
+          <img src="./images/feed-image-5.png" class="post-img" alt="" srcset="">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="">120</div>
+              <div><img src="./images/comments.png" alt="">45</div>
+              <div><img src="./images/share.png" alt="">20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="" srcset=""><i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+<button
+ type="button" class="load-more-btn">Load More</button>
+        
+      </div>
+      <!-- righr-sidebar -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fa fa-map-marker-alt"></i> Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fa fa-map-marker-alt"></i> Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img
+          src="./images/advertisement.png"
+          class="sidebar-ads"
+          alt=""
+          srcset=""
+        />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-1.png" alt="" srcset="" />
+          </div>
+          <p>Alison Mina</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-2.png" alt="" srcset="" />
+          </div>
+          <p>Jackson Aston</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-3.png" alt="" srcset="" />
+          </div>
+          <p>Samana Rose</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <p>Copyright 2025 Easy Tutorials YouTube Channel</p>
+    </div>
+
+
+    <!-- custom js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- https://www.youtube.com/watch?v=NljIHlZRTTE -->
+<!-- https://youtu.be/NljIHlZRTTE -->
